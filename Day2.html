@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Day2</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<style>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Day2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="main.css"
+        >
+        <script src="main.js"></script>
+    </head>
+    <style>
     body {
     margin: 0;
     font-size: 28px;
@@ -59,27 +64,42 @@
 .sticky + .content {
   padding-top: 60px;
 }
-</style>
-<body>
-    <div class="content">
-        <h3>Sticky Navigation Example</h3>
-        <p>The navbar will stick to the top
-         when you reach its scroll position.</p>
-         <p>Some text to enable scrolling..
+    </style>
+    <body>
+        <div class="content">
+            <h3>Sticky Navigation Example</h3>
+            <p>
+                The navbar will stick to the top
+         when you reach its scroll position.
+            </p>
+            <p>
+                Some text to enable scrolling..
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Nostrum, dolores quaerat consectetur laudantium minima corporis.
          Nihil maiores sit culpa reiciendis neque?
          Architecto minus voluptas dolor fugit?
-         Cupiditate aut consequuntur expedita.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit fugiat accusantium nostrum totam iusto id vitae, incidunt amet aliquid, nisi sint harum repellat illum, provident adipisci dolorum excepturi? Sapiente.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit fugiat accusantium nostrum totam iusto id vitae, incidunt amet aliquid, nisi sint harum repellat illum, provident adipisci dolorum excepturi? Sapiente.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit fugiat accusantium nostrum totam iusto id vitae, incidunt amet aliquid, nisi sint harum repellat illum, provident adipisci dolorum excepturi? Sapiente.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit fugiat accusantium nostrum totam iusto id vitae, incidunt amet aliquid, nisi sint harum repellat illum, provident adipisci dolorum excepturi? Sapiente.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit fugiat accusantium nostrum totam iusto id vitae, incidunt amet aliquid, nisi sint harum repellat illum, provident adipisci dolorum excepturi? Sapiente.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit fugiat accusantium nostrum totam iusto id vitae, incidunt amet aliquid, nisi sint harum repellat illum, provident adipisci dolorum excepturi? Sapiente.</p>
-      </div>
-     <script>
-        
-     </script>
-</body>
+         Cupiditate aut consequuntur expedita.
+            </p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit fugiat accusantium nostrum totam iusto id vitae, incidunt amet aliquid, nisi sint harum repellat illum, provident adipisci dolorum excepturi? Sapiente.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit fugiat accusantium nostrum totam iusto id vitae, incidunt amet aliquid, nisi sint harum repellat illum, provident adipisci dolorum excepturi? Sapiente.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit fugiat accusantium nostrum totam iusto id vitae, incidunt amet aliquid, nisi sint harum repellat illum, provident adipisci dolorum excepturi? Sapiente.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit fugiat accusantium nostrum totam iusto id vitae, incidunt amet aliquid, nisi sint harum repellat illum, provident adipisci dolorum excepturi? Sapiente.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit fugiat accusantium nostrum totam iusto id vitae, incidunt amet aliquid, nisi sint harum repellat illum, provident adipisci dolorum excepturi? Sapiente.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit fugiat accusantium nostrum totam iusto id vitae, incidunt amet aliquid, nisi sint harum repellat illum, provident adipisci dolorum excepturi? Sapiente.</p>
+        </div>
+        <script>
+          window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
+        }
+        }
+        </script>
+    </body>
 </html>
